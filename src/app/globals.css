@@ -19,3 +19,37 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Estilos generales para la scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Color del fondo de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #181818; /* Color del "pulgar" de la scrollbar */
+  border-radius: 10px;
+}
+
+/* Modo Claro */
+html {
+  --scrollbar-bg: #f7f7f7;
+  --scrollbar-thumb: #111827;
+}
+
+/* Modo Oscuro */
+html.dark {
+  --scrollbar-bg: #111827;
+  --scrollbar-thumb: #f7f7f7;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
